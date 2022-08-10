@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #75BCE6;
+    overflow: hidden;
+}
+
+h1{
+    font-size: 8vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.line{
+    background: #fff;
+    border-radius: 50px;
+    position: absolute;
+    top: 50%;
+    left: -1vw;
+    transform: translateY(-50%);
+    height: 3vh;
+    width: 0;
+    z-index: 2;
+    animation: grow 3s linear forwards;
+}
+
+@keyframes grow{
+    to{
+        width: 102vw;
+    }
+}
+
+.overlay{
+    z-index: 2;
+}

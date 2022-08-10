@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #5295F1;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 500px;
+}
+
+.circle{
+    background-color: #fff;
+    height: 14px;
+    width: 14px;
+    margin: 9px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform 0.3s linear;
+}
+
+.circle.grow{
+    transform: scale(2);
+}
